@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Food Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+                <h2 class="nav-logo">A taste of Gujarat's Tradition</h2>
+                <button id="menu-open-button" class="fas fa-bars"></button>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#order" class="nav-link">Order Now</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Gujju's World</h2>
+                    <h3 class="subtitle">With a taste of MAAHAKHA - MAA ke HAath ka KHAna</h3>
+                    <p class="description">"From our heart to your plate"</p>
+                    <div class="buttons">
+                        <a href="#order" class="button">Order Now</a>
+                        <a href="#contact" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/2.png" alt="Hero" class="hero-image"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-content">
+              <h2>About Us</h2>
+              <p>
+                Welcome to <strong>Guju's World</strong> — where food is more than a meal, it’s a memory. 
+                We bring you authentic, home-style Gujarati dishes straight from the heart of our kitchens. 
+                From the crispy Fafda to the sweet swirls of Jalebi, every bite carries the love of Gujarat’s rich culinary traditions.
+              </p>
+              <p>
+                Our mission is to keep traditions alive, blending age-old recipes with a touch of modern flair.
+                Join us to experience warmth, purity, and the unmatched taste of <strong>maa ke haath ka khana</strong>.
+              </p>
+              <a href="#menu" class="about-btn">Explore Our Menu</a>
+            </div>
+          </section>
+          
+
+          <section class="menu-section" id="menu">
+            <h2>Our Special Menu</h2>
+            <div class="menu-container">
+          
+              <div class="menu-item">
+                <img src="images/Dhokla.jpg" alt="Dhokla">
+                <h3>Dhokla</h3>
+                <p>Soft, fluffy and lightly spiced steamed snack made with gram flour.</p>
+                <span class="price">₹60</span>
+              </div>
+          
+              <div class="menu-item">
+                <img src="images/undhiyu.jpg" alt="Undhiyu">
+                <h3>Undhiyu</h3>
+                <p>A traditional mixed vegetable dish cooked with spices and fenugreek dumplings.</p>
+                <span class="price">₹120</span>
+              </div>
+          
+              <div class="menu-item">
+                <img src="images/jalebi.jpg" alt="Fafda Jalebi">
+                <h3>Fafda & Jalebi</h3>
+                <p>Crispy besan snack paired with hot, sweet jalebis — a festive favorite.</p>
+                <span class="price">₹80</span>
+              </div>
+          
+              <div class="menu-item">
+                <img src="images/thepla.jpg" alt="Thepla">
+                <h3>Thepla</h3>
+                <p>Spiced flatbreads made with wheat, fenugreek, and aromatic spices.</p>
+                <span class="price">₹40</span>
+              </div>
+          
+              <div class="menu-item">
+                <img src="images/handvo.jpg" alt="Handvo">
+                <h3>Handvo</h3>
+                <p>A savory vegetable cake made with lentils, rice, and grated bottle gourd.</p>
+                <span class="price">₹70</span>
+              </div>
+          
+              <div class="menu-item">
+                <img src="images/khandvi.jpg" alt="Khandvi">
+                <h3>Khandvi</h3>
+                <p>Delicate, soft rolls made with gram flour and yogurt, tempered with mustard seeds.</p>
+                <span class="price">₹100</span>
+              </div>
+          
+              <div class="menu-item">
+                <img src="images/Vada.jpg" alt="Vada">
+                <h3>Vada</h3>
+                <p>Soft, fluffy besan vadas dipped in a mildly spiced, tangy yogurt-based curry.</p>
+                <span class="price">₹60</span>
+              </div>
+          
+              <div class="menu-item">
+                <img src="images/patra.jpg" alt="Patra">
+                <h3>Patra</h3>
+                <p>Rolls of tender arbi leaves smeared with spicy-sweet gram flour paste, steamed to perfection.</p>
+                <span class="price">₹70</span>
+              </div>
+          
+            </div>
+          </section>
+          
+
+          <section id="order" class="order-section section-content">
+            <h2>Place Your Order</h2>
+          
+            <form action="#" method="post" class="order-form" onsubmit="event.preventDefault(); addOrderToCart();">
+              <label for="customer-name">Name:</label>
+              <input type="text" id="customer-name" name="customer-name" required placeholder="Your full name">
+          
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Your contact number">
+
+              <label for="address">Address:</label>
+<textarea id="address" name="address" rows="3" required placeholder="Your delivery address"></textarea>
+
+          
+              <label for="dish">Select Dish:</label>
+              <select id="dish" name="dish" required>
+                <option value="">-- Choose a Dish --</option>
+                <option value="Dhokla" data-price="60">Dhokla - ₹60</option>
+                <option value="Undhiyu" data-price="120">Undhiyu - ₹120</option>
+                <option value="Fafda & Jalebi" data-price="80">Fafda & Jalebi - ₹80</option>
+                <option value="Thepla" data-price="40">Thepla - ₹40</option>
+                <option value="Handvo" data-price="70">Handvo - ₹70</option>
+                <option value="Vada" data-price="50">Vada - ₹60</option>
+                <option value="Khandvi" data-price="60">Khandvi - ₹100</option>
+                <option value="Patra" data-price="65">Patra - ₹70</option>
+              </select>
+          
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+          
+              <button type="submit" class="button">Add to Cart</button>
+            
+            <div class="cart-section">
+            <h3>Your Cart</h3>
+            <div id="cart-items"></div>
+            <h3>Total: ₹<span id="total-amount">0</span></h3>
+            </div>
+            <button onclick="placeOrder()" type="submit" class="button">Place Order</button>
+          </form>
+          </section>
+          
+          
+
+        <section class="testimonials-section" id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-container">
+              <div class="testimonial-item">
+                <p>"The food was absolutely amazing! The flavors are so authentic, and every bite felt like home."</p>
+                <h3>- Ramesh Patel</h3>
+              </div>
+              <div class="testimonial-item">
+                <p>"I loved the variety of dishes and the quality of ingredients. Will definitely order again!"</p>
+                <h3>- Priya Desai</h3>
+              </div>
+              <div class="testimonial-item">
+                <p>"A true taste of Gujarat! The spices, the textures, everything was perfect."</p>
+                <h3>- Jayesh Shah</h3>
+              </div>
+              <div class="testimonial-item">
+                <p>"Best traditional food experience ever. I felt like I was back at my grandmother’s home in Gujarat!"</p>
+                <h3>- Sneha Mehta</h3>
+              </div>
+              <div class="testimonial-item">
+                <p>"Super quick service and the flavors took me straight to the streets of Ahmedabad. Loved it!"</p>
+                <h3>- Kiran Joshi</h3>
+              </div>
+              <div class="testimonial-item">
+                <p>"Affordable prices with top-notch quality. My whole family enjoyed the feast!"</p>
+                <h3>- Mehul Shah</h3>
+              </div>
+            </div>
+          </section>
+          
+        
+
+
+                </div>
+                <section class="gallery-section" id="gallery">
+                        <h2>Our Delicious Dishes</h2>
+                        <div class="gallery-container">
+                            <div class="gallery-item">
+                                <img src="images/Vada.jpg" alt="Dhokla">
+                                <div class="overlay">
+                                    <p>Vada</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/khandvi.jpg" alt="Thepla">
+                                <div class="overlay">
+                                    <p>Khandvi</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/jalebi.jpg" alt="Khandvi">
+                                <div class="overlay">
+                                    <p>Jalebi phapda</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/thepla.jpg" alt="Fafda">
+                                <div class="overlay">
+                                    <p>Thepla</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/patra.jpg" alt="Fafda">
+                                <div class="overlay">
+                                    <p>Patra</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/Dhokla.jpg" alt="Fafda">
+                                <div class="overlay">
+                                    <p>Dhokla</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section>
+        
+        <section id="contact" class="contact-section section-content">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here"></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gujju's World. All Rights Reserved.</p>
+        <p>
+            <a href="#" style="color: #f3961c; margin: 0 10px;"><i class="fab fa-facebook"></i></a>
+            <a href="#" style="color: #f3961c; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="color: #f3961c; margin: 0 10px;"><i class="fab fa-whatsapp"></i></a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
